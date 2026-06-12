@@ -1,8 +1,8 @@
 :root {
     --color-bg: #0a0a0a;
     --color-surface: rgba(23, 23, 23, 0.8);
-    --color-primary: #d4af37;
-    --color-secondary: #c5a028;
+    --color-primary: #00E5FF;
+    --color-secondary: #0088FF;
     --color-text: #ffffff;
     --color-text-muted: #a1a1aa;
     --glass-border: rgba(255, 255, 255, 0.1);
@@ -115,12 +115,12 @@ h1, h2, h3, h4, .logo {
 .btn-primary {
     background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
     color: #000;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+    box-shadow: 0 6px 20px rgba(0, 229, 255, 0.6);
 }
 
 .btn-outline {
@@ -206,8 +206,8 @@ h1, h2, h3, h4, .logo {
 
 .glass-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(212, 175, 55, 0.4);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+    border-color: rgba(0, 229, 255, 0.4);
+    box-shadow: 0 12px 40px rgba(0, 229, 255, 0.15);
 }
 
 /* Services Section */
