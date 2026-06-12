@@ -109,13 +109,31 @@
 
     <section id="location" class="location section-padding dark-section">
         <div class="container">
-            <h2 class="section-title">Find <span class="gradient-text">Us</span></h2>
-            <div class="location-content glass-card reveal">
-                <div class="location-info">
-                    <h3>KP Gifting And KP Fashion</h3>
-                    <p>📍 East Hartford, CT Area</p>
-                    <p>📞 Call us for custom orders</p>
-                    <a href="https://maps.app.goo.gl/QDPBi5JAUcnw41f78" target="_blank" rel="noopener noreferrer" class="btn btn-primary mt-2">Open in Google Maps</a>
+            <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+            <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 900px; margin: 0 auto;">
+                <div class="location-content glass-card reveal" style="text-align: left;">
+                    <div class="location-info">
+                        <h3>Contact Info</h3>
+                        <p style="margin-bottom: 1rem;">📍 East Hartford, CT Area</p>
+                        <p style="margin-bottom: 1rem;">📞 <a href="tel:+18605550199" style="color: var(--color-primary); font-weight: 600;">(860) 555-0199</a></p>
+                        <p style="margin-bottom: 1rem;">✉️ <a href="mailto:hello@kpfashion.com" style="color: var(--color-primary); font-weight: 600;">hello@kpfashion.com</a></p>
+                        <a href="https://maps.app.goo.gl/QDPBi5JAUcnw41f78" target="_blank" rel="noopener noreferrer" class="btn btn-outline mt-2">Open in Google Maps</a>
+                    </div>
+                </div>
+                <div class="glass-card reveal">
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Send a Message</h3>
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent!');">
+                        <div style="margin-bottom: 1rem;">
+                            <input type="text" placeholder="Your Name" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white; font-family: inherit;">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <input type="email" placeholder="Your Email" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white; font-family: inherit;">
+                        </div>
+                        <div style="margin-bottom: 1rem;">
+                            <textarea placeholder="Your Message" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white; min-height: 100px; font-family: inherit; resize: vertical;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -123,6 +141,11 @@
 
     <footer class="footer">
         <div class="container">
+            <div style="margin-bottom: 1.5rem; display: flex; justify-content: center; gap: 2rem;">
+                <a href="https://instagram.com" target="_blank" style="font-weight: 600; color: var(--color-primary);">Instagram</a>
+                <a href="https://facebook.com" target="_blank" style="font-weight: 600; color: var(--color-primary);">Facebook</a>
+                <a href="https://tiktok.com" target="_blank" style="font-weight: 600; color: var(--color-primary);">TikTok</a>
+            </div>
             <p>&copy; 2026 KP Gifting And KP Fashion. All rights reserved.</p>
         </div>
     </footer>
