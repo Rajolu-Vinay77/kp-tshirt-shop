@@ -124,15 +124,16 @@
                 </div>
                 <div class="glass-card reveal">
                     <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Send a Message</h3>
-                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent!');">
+                    <!-- Replace YOUR_FORMSPREE_ID with your actual Formspree ID -->
+                    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
                         <div style="margin-bottom: 1rem;">
-                            <input type="text" placeholder="Your Name" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white; font-family: inherit;">
+                            <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white; font-family: inherit;">
                         </div>
                         <div style="margin-bottom: 1rem;">
-                            <input type="email" placeholder="Your Email" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white; font-family: inherit;">
+                            <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white; font-family: inherit;">
                         </div>
                         <div style="margin-bottom: 1rem;">
-                            <textarea placeholder="Your Message" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white; min-height: 100px; font-family: inherit; resize: vertical;"></textarea>
+                            <textarea name="message" placeholder="Your Message" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.05); color: white; min-height: 100px; font-family: inherit; resize: vertical;"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
                     </form>

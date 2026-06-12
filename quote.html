@@ -72,52 +72,71 @@
             ⚡ Need it fast? Standard orders are ready within a day!
         </div>
         <div class="glass-card reveal">
-            <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! Your quote request has been submitted.');">
+            <!-- Replace YOUR_FORMSPREE_ID with your actual Formspree ID -->
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" class="form-control" required placeholder="John Doe">
+                    <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
                 </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" class="form-control" required placeholder="john@example.com">
+                <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" placeholder="(123) 456-7890">
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="product">Product Interest</label>
-                    <select id="product" class="form-control" required style="background-color: var(--color-bg);">
+                    <select id="product" name="product" class="form-control" required style="background-color: var(--color-bg);">
                         <option value="tshirt">Custom T-Shirts</option>
                         <option value="hoodie">Custom Hoodies</option>
                         <option value="gifts">Personalized Gifts</option>
                         <option value="other">Other/Mix</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="quantity">Estimated Quantity</label>
-                    <input type="number" id="quantity" class="form-control" min="1" placeholder="e.g. 50">
+                <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <label for="quantity">Estimated Quantity</label>
+                        <input type="number" id="quantity" name="quantity" class="form-control" min="1" placeholder="e.g. 50">
+                    </div>
+                    <div>
+                        <label for="size">Apparel Size</label>
+                        <select id="size" name="size" class="form-control" style="background-color: var(--color-bg);">
+                            <option value="">Select a size (Optional for bulk)</option>
+                            <option value="S">Small (S)</option>
+                            <option value="M">Medium (M)</option>
+                            <option value="L">Large (L)</option>
+                            <option value="XL">Extra Large (XL)</option>
+                            <option value="XXL">Double Extra Large (XXL)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <label for="color">Apparel Color</label>
+                        <input type="text" id="color" name="color" class="form-control" placeholder="e.g. Black, White, Charcoal">
+                    </div>
+                    <div>
+                        <label for="budget">Estimated Budget</label>
+                        <input type="text" id="budget" name="budget" class="form-control" placeholder="e.g. $100 - $250">
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="size">T-Shirt Size</label>
-                    <select id="size" class="form-control" style="background-color: var(--color-bg);">
-                        <option value="">Select a size (Optional for bulk)</option>
-                        <option value="S">Small (S)</option>
-                        <option value="M">Medium (M)</option>
-                        <option value="L">Large (L)</option>
-                        <option value="XL">Extra Large (XL)</option>
-                        <option value="XXL">Double Extra Large (XXL)</option>
-                    </select>
+                    <label for="deadline">Target Deadline</label>
+                    <input type="date" id="deadline" name="deadline" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="design_upload">Upload Design Photo</label>
-                    <input type="file" id="design_upload" class="form-control" accept="image/*" style="padding: 12px 1rem;">
-                </div>
-                <div class="form-group">
-                    <label for="color">Apparel Color</label>
-                    <input type="text" id="color" class="form-control" placeholder="e.g. Black, White, Charcoal">
+                    <label for="design_upload">Upload Design Photo / Logo</label>
+                    <input type="file" id="design_upload" name="design_upload" class="form-control" accept="image/*" style="padding: 12px 1rem;">
                 </div>
                 <div class="form-group">
                     <label for="details">Design Details & Requirements</label>
-                    <textarea id="details" class="form-control" required placeholder="Tell us about your design, colors, and any specific deadlines..."></textarea>
+                    <textarea id="details" name="details" class="form-control" required placeholder="Tell us about your design ideas, specific needs, or any questions..."></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Submit Request</button>
+                <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Submit Quote Request</button>
             </form>
         </div>
     </section>
